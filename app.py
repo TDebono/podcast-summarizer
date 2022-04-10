@@ -39,11 +39,11 @@ if go:
                     if not data:
                         break
                     yield data
-        
+        # read_file(uploaded_file)
         # upload our audio file
         upload_response = requests.post(
-        upload_endpoint,
-        headers=headers, data=read_file(uploaded_file)
+            upload_endpoint,
+            headers=headers, data=uploaded_file
         )
 
         # send a request to transcribe the audio file
