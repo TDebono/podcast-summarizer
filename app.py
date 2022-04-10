@@ -63,9 +63,7 @@ if go:
         final_transcription = polling_response.json()['text']
 
         st.subheader("Your transcript is ready!")
-        st.text("Go ahead and copy the transcript below, or simply download it directly as a text file.\
-                    No piece of software is perfect and we are continuously improving our algorithms, so you might want to briefly review the transcript after having downloaded it.\
-                    Thanks for your trust and support!🚀")
+        st.caption("Go ahead and copy the transcript below, or simply download it directly as a text file. No piece of software is perfect and we are continuously improving our algorithms, so you might want to briefly review the transcript after having downloaded it. Thanks for your trust and support!🚀")
 
         # st.write(final_transcription)
 
